@@ -1,0 +1,235 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "eslint:recommended"
+      ],
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "comma-dangle": [
+          "error",
+          "never"
+        ],
+        "eqeqeq": [
+          "error",
+          "always"
+        ],
+        "block-scoped-var": "error",
+        "array-callback-return": [
+          "error",
+          {
+            "allowImplicit": true
+          }
+        ],
+        "complexity": [
+          "error",
+          20
+        ],
+        "consistent-return": "error",
+        "curly": "error",
+        "default-case": "error",
+        "default-case-last": "error",
+        "dot-location": [
+          "error",
+          "property"
+        ],
+        "no-eval": "warn",
+        "no-constructor-return": "error",
+        "max-classes-per-file": [
+          "warn",
+          1
+        ],
+        "no-alert": "error",
+        "no-caller": "error",
+        "no-div-regex": "error",
+        "no-empty-function": [
+          "error",
+          {
+            "allow": [
+              "constructors",
+              "arrowFunctions"
+            ]
+          }
+        ],
+        "no-eq-null": "error",
+        "no-extra-bind": "error",
+        "no-extra-label": "error",
+        "no-floating-decimal": "error",
+        "no-implicit-globals": "error",
+        "no-implied-eval": "error",
+        "no-iterator": "error",
+        "no-labels": "error",
+        "no-lone-blocks": "error",
+        "no-loop-func": "error",
+        "no-multi-spaces": "error",
+        "no-new": "error",
+        "no-new-func": "error",
+        "no-new-wrappers": "error",
+        "no-nonoctal-decimal-escape": "error",
+        "no-octal-escape": "error",
+        "no-proto": "error",
+        "radix": "error",
+        "require-await": "error",
+        "wrap-iife": [
+          "error",
+          "any"
+        ],
+        "yoda": "error",
+        "no-return-assign": [
+          "error",
+          "always"
+        ],
+        "no-return-await": "error",
+        "no-script-url": "error",
+        "no-self-compare": "error",
+        "no-sequences": [
+          "error",
+          {
+            "allowInParentheses": false
+          }
+        ],
+        "no-throw-literal": "error",
+        "no-unmodified-loop-condition": "error",
+        "no-unused-labels": "error",
+        "no-useless-call": "error",
+        "no-useless-catch": "error",
+        "no-useless-concat": "error",
+        "no-useless-return": "error",
+        "no-void": "error",
+        "no-warning-comments": [
+          "error",
+          {
+            "terms": [
+              "todo",
+              "fixme",
+              "xxx"
+            ],
+            "location": "start"
+          }
+        ],
+        "prefer-named-capture-group": "error",
+        "prefer-promise-reject-errors": "error",
+        "prefer-regex-literals": [
+          "error",
+          {
+            "disallowRedundantWrapping": true
+          }
+        ],
+        "no-await-in-loop": "error",
+        "no-console": [
+          "error",
+          {
+            "allow": [
+              "warn",
+              "error"
+            ]
+          }
+        ],
+        "no-loss-of-precision": "error",
+        "no-promise-executor-return": "error",
+        "no-template-curly-in-string": "error",
+        "no-unreachable-loop": "error",
+        "no-unsafe-optional-chaining": "error",
+        "no-useless-backreference": "error",
+        "require-atomic-updates": "error",
+        "semi": "error",
+        "semi-style": [
+          "error",
+          "last"
+        ],
+        "no-multi-str": "error",
+        "no-lonely-if": "error",
+        "no-unused-vars": "off",
+        "no-undef": "off",
+        "no-prototype-builtins": "off",
+        "quotes": [
+          "error",
+          "single",
+          {
+            "allowTemplateLiterals": true
+          }
+        ],
+        "object-curly-spacing": [
+          "error",
+          "always"
+        ],
+        "semi-spacing": [
+          "error",
+          {
+            "before": false,
+            "after": true
+          }
+        ],
+        "key-spacing": [
+          "error",
+          {
+            "beforeColon": false,
+            "afterColon": true
+          }
+        ],
+        "indent": [
+          "error",
+          2,
+          {
+            "SwitchCase": 1,
+            "MemberExpression": 1,
+            "FunctionDeclaration": {
+              "body": 1,
+              "parameters": 2
+            }
+          }
+        ],
+        "quote-props": [
+          "error",
+          "consistent-as-needed"
+        ],
+        "max-len": [
+          2,
+          {
+            "code": 170
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended",
+        "prettier"
+      ],
+      "rules": {}
+    }
+  ]
+}
