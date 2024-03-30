@@ -73,6 +73,10 @@
             },
             "development": {
               "buildTarget": "angular-17-template-2024:build:development"
+            },
+            "mocks": {
+              "buildTarget": "angular-17-template-2024:build:development",
+              "proxyConfig": "proxy.mocks.conf.json"
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,22 @@
+{
+  "/api/*": {
+      "target": "http://localhost:9999",
+      "secure": false,
+      "logLevel": "debug"
+  },
+  "/application-server/*": {
+      "target": "http://localhost:9999",
+      "secure": false,
+      "logLevel": "debug"
+  },
+  "/ngapimock/*": {
+      "target": "http://localhost:9999",
+      "secure": false,
+      "logLevel": "debug"
+  },
+  "/mocking/*": {
+      "target": "http://localhost:9999",
+      "secure": false,
+      "logLevel": "debug"
+  }
+}

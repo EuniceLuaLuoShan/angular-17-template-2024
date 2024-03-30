@@ -1,0 +1,22 @@
+{
+  "name": "Roles",
+  "request": {
+    "url": "/roles(\\?.*)?$",
+    "method": "GET"
+  },
+  "responses": {
+    "badRequest": {
+      "status": 400,
+      "data": {
+        "message": "Bad Request",
+        "key": "GENERAL_ERROR",
+        "errors": []
+      }
+    },
+    "success": {
+      "default": true,
+      "status": 200,
+      "data": []
+    }
+  }
+}
