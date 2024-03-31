@@ -2,9 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Development server using mock
+Next to `src` folder at the root level also exists `mock-server` directory, which contains `ng-apimock` server to run locally and JSON with mocked data grouped inside `./mock-server/mocks/`.
+Run `npm run mock-server` for a dev mock BE server. Navigate to `http://localhost:9999/dev-interface/#/`. You are able to access the full list of available endpoints or to change response options.
+
+Run `npm run start:mocks` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files while calling mock-server API.
+
 
 ## Code scaffolding
 
