@@ -1,0 +1,111 @@
+$primary-50: #E1F5FE;
+$primary-100: #B3E5FC;
+$primary-200: #81D4FA;
+$primary-300: #4FC3F7;
+$primary-400: #29B6F6;
+$primary-500: #03A9F4;
+$primary-600: #039BE5;
+$primary-700: #0288D1;
+$primary-800: #0277BD;
+$primary-900: #01579B;
+$primary-A100: #80D8FF;
+$primary-A200: #40C4FF;
+$primary-A400: #00B0FF;
+$primary-A700: #0091EA;
+
+$primary-contrast-50: #E3F2FD;
+$primary-contrast-100: #BBDEFB;
+$primary-contrast-200: #90CAF9;
+$primary-contrast-300: #64B5F6;
+$primary-contrast-400: #42A5F5;
+$primary-contrast-500: #2196F3;
+$primary-contrast-600: #1E88E5;
+$primary-contrast-700: #1976D2;
+$primary-contrast-800: #1565C0;
+$primary-contrast-900: #0D47A1;
+$primary-contrast-A100: #82B1FF;
+$primary-contrast-A200: #448AFF;
+$primary-contrast-A400: #2979FF;
+$primary-contrast-A700: #2962FF;
+
+$accent-50: #E0F7FA;
+$accent-100: #B2EBF2;
+$accent-200: #80DEEA;
+$accent-300: #4DD0E1;
+$accent-400: #26C6DA;
+$accent-500: #00BCD4;
+$accent-600: #00ACC1;
+$accent-700: #0097A7;
+$accent-800: #00838F;
+$accent-900: #006064;
+$accent-A100: #84FFFF;
+$accent-A200: #18FFFF;
+$accent-A400: #00E5FF;
+$accent-A700: #00B8D4;
+
+
+$primary-palette: (
+ 50: $primary-50,
+ 100: $primary-100,
+ 200: $primary-200,
+ 300: $primary-300,
+ 400: $primary-400,
+ 500: $primary-500,
+ 600: $primary-600,
+ 700: $primary-700,
+ 800: $primary-800,
+ 900: $primary-900,
+ A100: $primary-A100,
+ A200: $primary-A200,
+ A400: $primary-A400,
+ A700: $primary-A700,
+ contrast: (
+  50: rgba($primary-contrast-A700, 0.87),
+  100: rgba($primary-contrast-A400, 0.87),
+  200: rgba($primary-contrast-A200, 0.87),
+  300: rgba($primary-contrast-A100, 0.87),
+  400: rgba($primary-contrast-900, 0.87),
+  500: rgba($primary-contrast-800, 0.87),
+  600: rgba($primary-contrast-700, 0.87),
+  700: rgba($primary-contrast-600, 0.87),
+  800: rgba($primary-contrast-500, 0.87),
+  900: rgba($primary-contrast-400, 0.87),
+  A100: rgba($primary-contrast-300, 0.87),
+  A200: rgba($primary-contrast-200, 0.87),
+  A400: rgba($primary-contrast-100, 0.87),
+  A700: rgba($primary-contrast-50, 0.87),
+),
+);
+
+$accent-palette: (
+  50: $accent-50,
+  100: $accent-100,
+  200: $accent-200,
+  300: $accent-300,
+  400: $accent-400,
+  500: $accent-500,
+  600: $accent-600,
+  700: $accent-700,
+  800: $accent-800,
+  900: $accent-900,
+  A100: $accent-A100,
+  A200: $accent-A200,
+  A400: $accent-A400,
+  A700: $accent-A700,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: white,
+    800: white,
+    900: white,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
