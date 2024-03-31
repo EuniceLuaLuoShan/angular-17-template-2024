@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div>
+      <p class="gradient-text">Angular Template</p>
+    </div>
+    <div>
+      <ng-container *ngFor="let tab of headerTabs">
+        <ng-container *ngIf="tab.dropdown as dropdown; else buttonTemplate">
+          <button mat-button [matMenuTriggerFor]="belowMenu">{{ tab.display }}</button>
+          <mat-menu #belowMenu="matMenu" yPosition="below">
+            <ng-container *ngFor="let option of dropdown">
+              <button mat-menu-item routerLinkActive="active-header-link" [routerLink]="option.routerLink">{{option.display}}
+                <mat-icon>{{ option.icon }}</mat-icon>
+              </button>
+            </ng-container>
+          </mat-menu>
+        </ng-container>
+
+        <ng-template #buttonTemplate>
+          <button mat-button routerLinkActive="active-header-link" [routerLink]="tab.routerLink">{{ tab.display}}</button>
+        </ng-template>
+      </ng-container>
+    </div>
+    <span class="spacer"></span>
+    <button mat-icon-button (click)="logout()">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

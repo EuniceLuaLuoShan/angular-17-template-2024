@@ -1,0 +1,12 @@
+@import '../../../theme/branding/custom-mat-theme.scss';
+
+.jumbotron{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  background-image: $gradient-default-background-image;
+  color: white;
+  padding: 1rem;
+}

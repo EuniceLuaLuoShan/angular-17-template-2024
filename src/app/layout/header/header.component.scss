@@ -1,0 +1,12 @@
+@import '../../../theme/branding/custom-mat-theme.scss';
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.gradient-text {
+  background-clip: text;
+  color: transparent;
+  background-image: $gradient-default-text-color;
+}
+
